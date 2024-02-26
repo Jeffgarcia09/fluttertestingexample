@@ -35,5 +35,16 @@ main() {
       //Assert
       expect(counter.count, -1);
     });
+    test(
+        'Given a Counter class is instantiated, when incrementCount is called and reset is called, then the count = 0',
+        () {
+      //arrange
+
+      //act
+      counter.incrementCount();
+      counter.resetCount();
+      //Assert
+      expect(counter.count, 0);
+    });
   });
 }
